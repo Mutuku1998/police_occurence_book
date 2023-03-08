@@ -68,4 +68,12 @@ transform: translateY(-100vh);
         transform: none;
 
     }
+    nav .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
 }
