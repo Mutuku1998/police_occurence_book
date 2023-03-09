@@ -1,7 +1,8 @@
 import React from "react";
 import { useRef } from "react";
-import{FaBars,FaTimes} from "react-icons/fa"
+import{FaBars,FaTimes} from "react-icons/fa";
 import "../styles/main.css";
+import logo from '../images/police.jpeg';
 function Navbar(){
     const navRef= useRef();
     const showNavbar=() =>{
@@ -10,7 +11,9 @@ function Navbar(){
     return(
       
 <header>
+       <img src={logo} width={100} height={100} /> 
     <h3>
+  
     0B registration
 </h3>
 <nav>
