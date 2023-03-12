@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap'); 
 *{
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+  ;
+}
+:root{
+  --maincolor:#29335c;
+  --maincolorlight:#576799;
+--secondarycolor:#DB2B39;
+--textcolor:#eee;
 }
 
 body {
@@ -10,21 +21,6 @@ body {
     width: 100vw;
     height: 100vh;
     background: #c99b2b;
-}
-.each-slide-effect > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 350px;
-}
-
-.each-slide-effect span {
-  padding: 20px;
-  font-size: 20px;
-  background: black;
-  text-align: center;
-  color: white;
 }
 header{
   display: flex;
@@ -87,4 +83,19 @@ transform: translateY(-100vh);
   nav a{
       font-size: 1.5rem;
   }
+}
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: black;
+  text-align: center;
+  color: white;
 }

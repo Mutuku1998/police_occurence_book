@@ -6,7 +6,6 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Administration from "./components/Administration";
 import services from "./components/services";
-import "./components/main.css";
 import './App.css';
 function App() { 
   return (
