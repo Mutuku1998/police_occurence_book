@@ -17,74 +17,52 @@ body {
 
 	overflow-x: hidden;
 	background-size: contain;
-	 margin: 0;
+	 margin: 1
+;
     width: 100vw;
     height: 100vh;
     background: #c99b2b;
 }
-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 02rem;
-  background-color: var(--maincolor);
-  color: var(--textcolor);
+.home{
+  background: #c99b2b;
 }
-nav a{
-  margin: 0 2rem;
-  color: var(--textcolor);
-  text-decoration: none;
-
-}
-nav a:hover{
-  color: var(--secondarycolor);
-
-} 
-header .nav-btn{
-  padding: 5px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--textcolor);
-  visibility: hidden;
-  opacity: 0;
-}
-@media only screen and (max-width:1024px){
-  header.nav-btn{
-      visibility: visible;
-      opacity: 1;
-
-  }
-  header nav{
-position: fixed;
-opacity: 0;
-left: 0;
-height: 100%;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-gap:1.5rem;
-background-color: var(--maincolor);
-transition: 1s;
-transform: translateY(-100vh);
-  }
-  header .responsive_nav{
-      transform: none;
-
-  }
-  nav .nav-close-btn{
-      position: absolute;
-      top: 2rem;
-      right: 2rem;
-  }
-  nav a{
-      font-size: 1.5rem;
-  }
-}
-.each-slide-effect > div {
+    .kk{
+      text-align: center;
+      color: white;
+    }
+    .Header
+    {
+      background-color: blue;
+        position: sticky;
+        top: 0px;
+        padding: 4px 0px;
+    }
+    .topnav
+    {
+      display:ruby-base-container;
+      background:#0B55C4;
+      text-align: center;
+    
+      
+    }
+    .topnav ul
+    {
+      display: inline-flex;
+      list-style: none;
+      color: green;
+    }
+    .topnav ul li
+    {
+      width: 120px;
+      margin: 10px;
+      padding: 15px;
+    }
+    .topnav ul li a
+    {
+      text-decoration: none;
+      color:white;
+    }
+.each-slide-effect {
   display: flex;
   align-items: center;
   justify-content: center;

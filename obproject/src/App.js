@@ -1,11 +1,11 @@
 import React from "react";
 import {Switch,Route, BrowserRouter,Link} from "react-router-dom"
-import Aboutus from "./components/Aboutus";
-import contactus from "./components/contactus";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Administration from "./components/Administration";
-import services from "./components/services";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Homepage from "./pages/Homepage";
+import Navbar from "./pages/Navbar";
+import Administration from "./pages/Administration";
+import Services from "./pages/Services";
 import './App.css';
 function App() { 
   return (
@@ -19,30 +19,30 @@ function App() {
     <ul>
   
     <li><Link to="/">Home</Link></li>
-            <li><Link to="/Aboutus">About us</Link></li>
+            <li><Link to="/About">About</Link></li>
             <li><Link to="/Administration">Administration</Link></li>
-            <li><Link to="/services">services</Link></li>
-            <li><Link to="/contactus">contact us</Link></li>
+            <li><Link to="/Services">Services</Link></li>
+            <li><Link to="/Contact">Contact</Link></li>
     </ul>
   </nav>
   <Switch>
-  <Route path="/Aboutus">
-            <Aboutus/>
+  <Route path="/Contact">
+            <Contact />
           </Route>
           <Route path="/Navbar">
             <Navbar />
           </Route>
+          <Route path="/Services">
+            <Services/>
+            </Route>
+          <Route path="/About">
+            <About/>
+          </Route>
           <Route path="/Administration">
             <Administration/>
-            </Route>
-          <Route path="/services">
-            <services/>
-          </Route>
-          <Route path="/contactus">
-            <contactus/>
           </Route>
           <Route exact path="/">
-            <Home/>
+            <Homepage />
           </Route>
           </Switch>
   </BrowserRouter>
