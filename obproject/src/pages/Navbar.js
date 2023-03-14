@@ -11,12 +11,10 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className>
-      <div>
-        <h1 className>TB</h1>
-      </div>
-      {/* menu */}
+  
+    <div>
       <ul className='hidden md:flex gap-x-8'>
+
         <li>
           <Link to='home' smooth={true} duration={500}>
             Home
